@@ -25,7 +25,8 @@ El modelo que se usó para este trabajo fue el clasificador de especies de ping�
    ```
    Esto cargará la imagen del Docker Hub y levantará el servicio.
 
-3. **Levantar el Docker Compose para Locust**
+2. **Levantar el Docker Compose para Locust**
+
    Para ejecutar las pruebas de carga con Locust, use el Docker Compose en la carpeta `locust` del repositorio. Ejecute el siguiente comando para iniciar Locust:
    ```bash
    docker-compose -f locust/docker-compose.yaml up
@@ -34,11 +35,13 @@ El modelo que se usó para este trabajo fue el clasificador de especies de ping�
    Una vez que Locust esté ejecutándose, puede acceder a la interfaz web para las pruebas de carga en:
    [http://localhost:8089](http://localhost:8089)
 
-4. **Verificar que la API del modelo esté activa**
+3. **Verificar que la API del modelo esté activa**
+
    Con el servicio de la API ejecutándose, puede acceder a la documentación de la API en:
    [http://localhost:8000/docs](http://localhost:8000/docs)
 
-5. **Correr en Locust para pruebas de carga**
+4. **Correr en Locust para pruebas de carga**
+
    Después de levantar la interfaz web para las pruebas de carga, se debe verificar que la petición se haga a [http://mi-servicio](http://mi-servicio) (Nombre del contenedor del modelo), luego ejecutar las pruebas de carga dando al botón RUN.
 
 ## Resultados de las pruebas de carga
