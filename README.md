@@ -41,11 +41,9 @@ El modelo que se usó para este trabajo fue el clasificador de especies de ping�
    Después de levantar la interfaz web para las pruebas de carga, se debe verificar que la petición se haga a [http://mi-servicio](http://mi-servicio) (Nombre del contenedor del modelo), luego ejecutar las pruebas de carga dando al botón RUN.
 
 ## Resultados de las pruebas de carga
-Las siguientes imágenes muestran los resultados de las pruebas de carga, donde se alcanzaron 10,000 usuarios.
+La siguiente imagen muestra los resultados de las pruebas de carga, donde se alcanzaron 10,000 usuarios.
+![total_requests_per_second_1713752480 097 (1)](https://github.com/wpradab/Talle-4-Docker-hub/assets/142359246/3bbf2729-37be-4d62-ae07-2fe2ef5bdf1a)
 
-![Resultados](10000request.png)
-
-![Gráficos de rendimiento](https://i.imgur.com/JW4ZXGT.png)
 
 ## Referencias
 - [Repositorio del proyecto en GitHub](https://github.com/wpradab/Talle-4-Docker-hub.git)
