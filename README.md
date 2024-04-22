@@ -1,5 +1,5 @@
 
-# Taller de Docker y FastAPI
+# Taller 4 Docker Hub y Locust
 
 ## Descripción
 Este taller fue desarrollado por William David Prada Buitrago, Juan David Torres Jimenez, y Ricardo Macias Bohorquez. El objetivo era crear una imagen de Docker que contenga una API utilizando FastAPI para realizar inferencias con un modelo previamente entrenado y publicar la imagen final en Docker Hub para su uso y prueba usando Locust.
