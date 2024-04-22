@@ -10,6 +10,9 @@ Este taller fue desarrollado por William David Prada Buitrago, Juan David Torres
 - FastAPI
 - Locust para pruebas de carga
 
+## Arquitectura
+Se utiliza un docker compose para levantar una API creada con FastAPI para modelo de clasificación de tipo de pinguüino basado en sus caracteristicas. Luego se levanta otro Docker compose que contiene la interfaz web de Locust y el archivo locustfile.py que se encarga de la prueba de carga para la API del modelo. Los contenedores se comunican a partir de una red que llamamos locust_network y los resultados de la prueba se ven en la interfaz web de Locust.
+
 ## Instrucciones para usar el repositorio
 El modelo que se usó para este trabajo fue el clasificador de especies de pingüinos.
 1. **Levantar el Docker Compose para la API del modelo de pingüinos**
