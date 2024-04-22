@@ -7,13 +7,13 @@ services:
       - "8089:8089" # Puerto para la interfaz web de Locust
     volumes:
       - ./locustfile.py:/mnt/locust/locustfile.py # Monta el locustfile.py desde el directorio actual al contenedor
-    # command: -f /mnt/locust/locustfile.py --master -H http://localhost:8000/docs  # Reemplaza 'http://target-host' con la URL del sitio que quieres probar
-    command: -c "apt-get update && apt-get install -y curl && -f /mnt/locust/locustfile.py --master -H http://localhost:8000/docs"
+    command: -f /mnt/locust/locustfile.py --master -H http://mi-servicio  # Reemplaza 'http://target-host' con la URL del sitio que quieres probar
+    # command: -c "apt-get update && apt-get install -y curl && -f /mnt/locust/locustfile.py --master -H http://localhost:8000/docs"
     networks:
       - locust_network
     environment:
       LOCUST_MODE: master
-      LOCUST_HOST: http://localhost:8000/docs
+      LOCUST_HOST: http://mi-servicio
 
   locust-worker:
     image: locustio/locust

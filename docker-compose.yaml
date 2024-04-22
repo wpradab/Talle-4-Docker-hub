@@ -1,5 +1,4 @@
 version: '3.8'  # Asegúrate de usar una versión compatible con tu instalación de Docker Compose
-
 services:
   mi-servicio:
     image: david984/penguin_inference:latest
@@ -7,6 +6,11 @@ services:
       - "8000:80"  # Mapea el puerto 8080 del contenedor al puerto 8080 de tu host (ajusta según tus necesidades)
     networks:
       - locust_network
+    deploy:
+      resources:
+        limits:
+          cpus: '2'  # Limita a medio CPU
+          memory: 1024M  # Limita a 50 MB de memoria
 networks:
   locust_network:
     external: true
